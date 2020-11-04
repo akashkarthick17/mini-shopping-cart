@@ -1,0 +1,13 @@
+query ValidateToken {
+  validateToken {
+    user {
+      id
+      email
+      firstName
+      lastName
+      phoneNumber
+      userType
+      createdAt
+    }
+  }
+}

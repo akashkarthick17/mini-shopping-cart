@@ -1,0 +1,33 @@
+#cartModal .list-group-item + .list-group-item {
+  border-top-width: 1px;
+}
+
+#cartModal .modal-body {
+  height: 500px;
+  overflow-y: auto;
+}
+
+#cartModal .quantity-button {
+  border: 1px solid #dddbdb;
+  border-radius: 6px;
+  padding: 2px 8px;
+  color: #828181;
+  background: #f8f6f6;
+}
+
+#cartModal .quantity {
+  border: 1px solid darkgrey;
+  display: inline-block;
+  height: 28px;
+  text-align: center;
+  width: 36px;
+}
+
+#cartModal a {
+  color: black;
+}
+
+#cartModal a:hover {
+  color: #007bff;
+  text-decoration: none;
+}

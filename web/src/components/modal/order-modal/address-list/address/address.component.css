@@ -1,0 +1,14 @@
+.address__container {
+  cursor: pointer;
+}
+
+.address__container:hover, 
+.address__container:focus {
+  background: rgba(240, 240, 240, 0.26);
+  outline: none;
+}
+
+.address__container.selected {
+  background: rgba(240, 240, 240, 0.452);
+  box-shadow: 0 0 0 3px rgba(87, 184, 240, 0.548);
+}

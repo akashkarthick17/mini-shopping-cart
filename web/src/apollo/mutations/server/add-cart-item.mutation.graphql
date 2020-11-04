@@ -1,0 +1,21 @@
+mutation AddCartItem($productId: Int!) {
+  addCartItem(productId: $productId) {
+    cartItem {
+      id
+      quantity
+      createdAt
+      updatedAt
+      product {
+        id
+        name
+        price
+        description
+        discountPercentage
+        offerPrice
+        imageUrl
+        brand
+        stockCount
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+body {
+  background-color: #eaeaea;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+a {
+  transition: color .2s linear 0s;
+}

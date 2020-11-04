@@ -1,0 +1,22 @@
+query GetProducts($productInput: ProductInput!) {
+  getProducts(productInput: $productInput) {
+    products {
+      id
+      name
+      price
+      description
+      category
+      subCategory
+      features
+      discountPercentage
+      offerPrice
+      imageUrl
+      brand
+      warehouseId
+      stockCount
+      createdAt
+      isAddedToCart
+    }
+    totalPages
+  }
+}

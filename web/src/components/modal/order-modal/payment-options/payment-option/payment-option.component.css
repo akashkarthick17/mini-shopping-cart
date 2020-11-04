@@ -1,0 +1,29 @@
+.payment-option__container {
+  cursor: pointer;
+}
+
+.payment-option__container .card-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px !important;
+  margin: 0;
+}
+
+.payment-option__container:hover, 
+.payment-option__container:focus {
+  background: rgba(240, 240, 240, 0.26);
+  outline: none;
+}
+
+.payment-option__container.selected {
+  background: rgba(240, 240, 240, 0.452);
+  box-shadow: 0 0 0 3px rgba(87, 184, 240, 0.548);
+}
+
+.payment-option__container.disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  background: rgb(245 245 245 / 84%);
+  color: #bbbaba;
+}

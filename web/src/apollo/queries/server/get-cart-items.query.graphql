@@ -1,0 +1,21 @@
+query GetCartItems {
+  getCartItems {
+    cartItems {
+      id
+      quantity
+      createdAt
+      updatedAt
+      product {
+        id
+        name
+        price
+        description
+        discountPercentage
+        offerPrice
+        imageUrl
+        brand
+        stockCount
+      }
+    }
+  }
+}

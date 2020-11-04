@@ -1,0 +1,21 @@
+mutation UpdateCartItem($id: Int!, $quantity: Int!) {
+  updateCartItem(id: $id, quantity: $quantity) {
+    cartItem {
+      id
+      quantity
+      createdAt
+      updatedAt
+      product {
+        id
+        name
+        price
+        description
+        discountPercentage
+        offerPrice
+        imageUrl
+        brand
+        stockCount
+      }
+    }
+  }
+}

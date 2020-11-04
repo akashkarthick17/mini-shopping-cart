@@ -1,0 +1,8 @@
+mutation PlaceOrder($deliveryAddressId: Int!, $paymentTypeId: Int!) {
+  placeOrder(
+    deliveryAddressId: $deliveryAddressId
+    paymentTypeId: $paymentTypeId
+  ) {
+    message
+  }
+}
