@@ -1,0 +1,13 @@
+input RegisterInput {
+  email: String
+  password: String
+  firstName: String
+  lastName: String
+  phoneNumber: String
+  userType: UserType
+}
+
+type Mutation {
+  login(email: String, password: String): LoginResponse
+  register(registerInput: RegisterInput): RegisterResponse
+}

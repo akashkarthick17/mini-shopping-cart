@@ -1,0 +1,26 @@
+type Product {
+  id: Int!
+  name: String!
+  price: Float!
+  description: String!
+  category: String!
+  subCategory: String!
+  features: String!
+  discountPercentage: Int!
+  offerPrice: Int
+  imageUrl: String!
+  brand: String!
+  warehouseId: Int!
+  stockCount: Int!
+  createdAt: String!
+  isAddedToCart: Boolean!
+}
+
+type ProductResponse {
+  product: Product
+}
+
+type ProductsResponse {
+  products: [Product]!
+  totalPages: Int!
+}

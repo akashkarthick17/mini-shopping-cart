@@ -1,0 +1,29 @@
+type Address {
+  id: Int!
+  address1: String!
+  address2: String
+  pinCode: String!
+  city: String!
+  landmark: String
+  gpsCoordinates: String
+}
+
+type GetAddressListResponse {
+  addressList: [Address]!
+}
+
+type GetAddressResponse {
+  address: Address!
+}
+
+type AddAddressResponse {
+  address: Address!
+}
+
+type UpdateAddressResponse {
+  address: Address!
+}
+
+type DeleteAddressResponse {
+  message: String!
+}

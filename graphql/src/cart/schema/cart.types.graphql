@@ -1,0 +1,28 @@
+type CartItem {
+  id: Int!
+  product: Product!
+  quantity: Int!
+  createdAt: String!
+  updatedAt: String!
+}
+
+type GetCartItemsResponse {
+  cartItems: [CartItem!]!
+  totalPages: Int!
+}
+
+type AddCartItemResponse {
+  cartItem: CartItem!
+}
+
+type UpdateCartItemResponse {
+  cartItem: CartItem!
+}
+
+type DeleteCartItemResponse {
+  message: String!
+}
+
+type DeleteCartItemsOfUserResponse {
+  message: String!
+}

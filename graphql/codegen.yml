@@ -1,0 +1,9 @@
+schema: 
+  - './src/schema/joined.schema.graphql'
+generates:
+  ./src/schema/graphql-schema.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+config:
+  declarationKind: 'interface'

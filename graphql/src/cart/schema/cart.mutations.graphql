@@ -1,0 +1,6 @@
+type Mutation {
+  addCartItem(productId: Int!): AddCartItemResponse
+  updateCartItem(id: Int, quantity: Int!): UpdateCartItemResponse
+  deleteCartItem(id: Int!): DeleteCartItemResponse
+  deleteCartItemsOfUser(userId: String!): DeleteCartItemsOfUserResponse
+}

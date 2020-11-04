@@ -1,0 +1,14 @@
+input ProductInput {
+  category: String
+  subCategory: String
+  searchTerm: String
+  pageLimit: Int!
+  pageOffset: Int!
+  sortBy: SortBy
+  sortOrder: SortOrder
+}
+
+type Query {
+  getProduct(id: Int!): ProductResponse
+  getProducts(productInput: ProductInput!): ProductsResponse
+}

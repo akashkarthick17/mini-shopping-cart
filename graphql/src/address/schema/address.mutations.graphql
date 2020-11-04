@@ -1,0 +1,14 @@
+input AddressInput {
+  address1: String!
+  address2: String
+  pinCode: String!
+  city: String!
+  landmark: String
+  gpsCoordinates: String
+}
+
+type Mutation {
+  addAddress(addressInput: AddressInput!): AddAddressResponse
+  updateAddress(id: Int!, addressInput: AddressInput!): UpdateAddressResponse
+  deleteAddress(id: Int!): DeleteAddressResponse
+}

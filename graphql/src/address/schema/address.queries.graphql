@@ -1,0 +1,5 @@
+
+type Query {
+  getAddressList: GetAddressListResponse
+  getAddress(id: Int!): GetAddressResponse
+}

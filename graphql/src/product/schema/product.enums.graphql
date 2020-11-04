@@ -1,0 +1,9 @@
+enum SortBy {
+  PRICE
+  RATING
+}
+
+enum SortOrder {
+  ASC
+  DESC
+}
